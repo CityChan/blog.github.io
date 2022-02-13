@@ -6,7 +6,7 @@
   <link href="https://citychan.github.io/atom.xml" rel="self"/>
   
   <link href="https://citychan.github.io/"/>
-  <updated>2022-01-19T05:24:49.084Z</updated>
+  <updated>2022-02-13T00:23:07.749Z</updated>
   <id>https://citychan.github.io/</id>
   
   <author>
@@ -15,6 +15,58 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Reinforcement Learning Introduction</title>
+    <link href="https://citychan.github.io/2022/02/12/Reinforcement-Learning-Introduction/"/>
+    <id>https://citychan.github.io/2022/02/12/Reinforcement-Learning-Introduction/</id>
+    <published>2022-02-12T23:13:34.000Z</published>
+    <updated>2022-02-13T00:23:07.749Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="Reading Note" scheme="https://citychan.github.io/categories/Reading-Note/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://citychan.github.io/tags/Reinforcement-Learning/"/>
+    
+    <category term="Theory" scheme="https://citychan.github.io/tags/Theory/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Reinforcement Learning Chap 2</title>
+    <link href="https://citychan.github.io/2022/02/12/Reinforcement-Learning-Chap-2/"/>
+    <id>https://citychan.github.io/2022/02/12/Reinforcement-Learning-Chap-2/</id>
+    <published>2022-02-12T23:11:02.000Z</published>
+    <updated>2022-02-12T23:13:01.070Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="Reading Note" scheme="https://citychan.github.io/categories/Reading-Note/"/>
+    
+    
+    <category term="Reinforcement Learning" scheme="https://citychan.github.io/tags/Reinforcement-Learning/"/>
+    
+  </entry>
   
   <entry>
     <title>失眠是枕头之上无尽的流浪</title>

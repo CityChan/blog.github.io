@@ -4,6 +4,58 @@
   
     
     <entry>
+      <title>Reinforcement Learning Introduction</title>
+      <link href="/2022/02/12/Reinforcement-Learning-Introduction/"/>
+      <url>/2022/02/12/Reinforcement-Learning-Introduction/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>#Introduction</p><p>After submitting a paper to ICML2022 in Jan, I feel really unconfident in my English academic writing since my supervisor almost polished every sentences in the paper for me and iterated the paper until 3 am, the deadline was three hours away. Although my boss is a easy-going person, he suggested me to improve my writing and presentation skills which are important for my Ph.d defense and job interviews. Therefore, I realize that I need to write something in English, not restricted to my mother tongue.</p><p>This semester, CS department is giving a course ‘Reinforcement Learning’ which I am very interested in. However, I am having an full-time internship so I can’t enroll in this class. Hence, I decided to read the textbook on my own. I will write down the key contents of each chapter in the following days.</p><p>##text book<br><a href="https://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf">Reinforcement Learning: An Introduction</a><br><a href="http://incompleteideas.net/">Richard S. Sutton</a> and <a href="https://people.cs.umass.edu/~barto/">Andrew G. Barto</a>.</p><p>##1. Elements of Reinforcement Learning<br>A reinforcement learning system consists of : a <em>policy</em>, a <em>reward</em>, a <em>value function</em> and a <em>model</em> of environment.<br>###1.1 Policy<br>Policy defines the way of an agent behaving at a specific environment(timestep, states of the system, action set). It corresponds to a set of <em>stimulus-reponse</em> map. Assuming all agents are rational, the policy of each agent will correspond to the action bring maximum reward in term of value function at the state at given timestep in the environment.</p><p>###1.2 Reward and Value<br>Reward defines the goal of a reinforcement learning problem. After agents make action at each step, the environment will convert to next state according to the action made by agents while agents will receive rewards in an immedidate sense. The goal of each agent is to maximize the total rewards from the beginning to the end(summation of rewards at all rounds). However, value of state specifies what is good in the long run. It is not so straightforward to tell how much value a state has, not as simple as reward does. For example, a state might have a very low reward for each agent in the system but this state might bring very high rewards in the following round. Then we can say this state has high value.</p><p>###1.3<br>Model needs to define how the environment changes according to the actions made by agents. The common way to describe the environment is using <strong>transition matrix</strong>. If we can explicitly compute the transition matrix to plan, we can call this <strong>model-based</strong> methods. However, it is strict to demand transition matrix. Most of the time, we can not know the transition matrix. Apart from model-based methods, <strong>model-free</strong> methods which simultaneously learns the model of environment by trial and error are more practical for reinforcement learning problems.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Reading Note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Reinforcement Learning </tag>
+            
+            <tag> Theory </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Reinforcement Learning Chap 2</title>
+      <link href="/2022/02/12/Reinforcement-Learning-Chap-2/"/>
+      <url>/2022/02/12/Reinforcement-Learning-Chap-2/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>#2. Multi-armed Bandits</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Reading Note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Reinforcement Learning </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>失眠是枕头之上无尽的流浪</title>
       <link href="/2018/06/08/%E5%A4%B1%E7%9C%A0%E6%98%AF%E6%9E%95%E5%A4%B4%E4%B9%8B%E4%B8%8A%E6%97%A0%E5%B0%BD%E7%9A%84%E6%B5%81%E6%B5%AA/"/>
       <url>/2018/06/08/%E5%A4%B1%E7%9C%A0%E6%98%AF%E6%9E%95%E5%A4%B4%E4%B9%8B%E4%B8%8A%E6%97%A0%E5%B0%BD%E7%9A%84%E6%B5%81%E6%B5%AA/</url>
