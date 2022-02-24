@@ -6,7 +6,7 @@
   <link href="https://citychan.github.io/atom.xml" rel="self"/>
   
   <link href="https://citychan.github.io/"/>
-  <updated>2022-02-18T18:00:03.730Z</updated>
+  <updated>2022-02-24T22:30:44.957Z</updated>
   <id>https://citychan.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Dirichlet Process(1)</title>
+    <link href="https://citychan.github.io/2022/02/23/Dirichlet-Process/"/>
+    <id>https://citychan.github.io/2022/02/23/Dirichlet-Process/</id>
+    <published>2022-02-24T03:40:43.000Z</published>
+    <updated>2022-02-24T22:30:44.957Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html"></summary>
+        
+      
+    
+    
+    
+    <category term="Reading Note" scheme="https://citychan.github.io/categories/Reading-Note/"/>
+    
+    
+    <category term="Bayesian Nonparametrics" scheme="https://citychan.github.io/tags/Bayesian-Nonparametrics/"/>
+    
+    <category term="Dirichlet process" scheme="https://citychan.github.io/tags/Dirichlet-process/"/>
+    
+  </entry>
   
   <entry>
     <title>Reinforcement Learning Introduction</title>

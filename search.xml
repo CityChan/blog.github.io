@@ -4,6 +4,33 @@
   
     
     <entry>
+      <title>Dirichlet Process(1)</title>
+      <link href="/2022/02/23/Dirichlet-Process/"/>
+      <url>/2022/02/23/Dirichlet-Process/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\assets\js\Meting.min.js"></script><p>When we are using a Bayesian model to fit a bunch of given data samples using Bayesian inference, we need to set up the formulation of the model including fixed dimension of parameters and the assumed distribution. If we are using too little parameters, we will suffer from underfitting. On the contrary, we will suffer overfitting using too many parameters. For example(extremely), we want to utilize <span class="math inline">\(k\)</span> Gaussian distribution to fit <span class="math inline">\(N\)</span> samples, the most common way is using <span class="math inline">\(k\)</span>-mean clustering if we really know what <span class="math inline">\(k\)</span> is. However, if we set <span class="math inline">\(k = N\)</span>, we will get a very accurate clustering. Of course, we are deviding all samples in a partition with only one sample. This is stupid and wasting computing resource. However, it is always difficult to ensure what <span class="math inline">\(k\)</span> should be especially the data has high dimension so it is impossible to visualize.</p><p>What if we also set <span class="math inline">\(k\)</span> as a parameter, and we can maximize the likelihood: <span class="math display">\[\max_{\theta} \sum_{i=1}^{N} \log \sum_{l=1}^{k} \alpha_{l} N\left(x_{i} \mid \mu_{l}, \Sigma_{l}\right)\]</span> where <span class="math inline">\(\theta =\left\{\mu_{1} \ldots \mu_{k}, \Sigma_{1}-\Sigma_{k}, \alpha_{1} \ldots, \alpha_{k-1}, k\right\}\)</span>. Our goal is to getting a function to quantify optimal <span class="math inline">\(k^{\star}\)</span>, for example, <span class="math inline">\(k^{\star} = f(N)\)</span>. We also hope that <span class="math inline">\(f(N) \propto \log(N)\)</span>, this is reasonable because <span class="math inline">\(k\)</span> should increase following <span class="math inline">\(N\)</span> but it can not have the same magnitude with <span class="math inline">\(N\)</span>. However, exhilaratingly, we can expect to get this with a Dirichlet Process: <span class="math display">\[E[k] \propto \log (N)\]</span></p><p>Let us formulate the problem clearly, we are given a dataset <span class="math inline">\(\{x_1,\dots,x_N\}\)</span>, we hope to find out the distribution parameters <span class="math inline">\(\theta_i\)</span>(model) where <span class="math inline">\(x_i\)</span> is drawn from. <span class="math inline">\(x_{i}\)</span> and <span class="math inline">\(x_{j}\)</span> can be drawn from the same distribution but we still use <span class="math inline">\(\theta_{i}\)</span> and <span class="math inline">\(theta_{j}\)</span> to describe them. However, if we assume all the <span class="math inline">\(\theta_{i}\)</span> are drawn from a continuous distribution <span class="math inline">\(\theta_{i} \sim H(\theta)\)</span>. Under this assumption, we can assert that <span class="math display">\[ P(\theta_{i} = \theta_{j}) = 0\]</span> althought <span class="math inline">\(\theta_{i} = \theta_{j}\)</span> is impossible since its probability measure is equal to 0. This is not what we want, we want a model <span class="math inline">\(\theta_{i}\)</span> can describe plenty of samples which means <span class="math inline">\(\theta_{i} = \theta_{j}\)</span> should be possible. Therefore, we can not use the continuous disribution to generate <span class="math inline">\(\theta\)</span>. What is we construct a discrete distribution to approximate <span class="math inline">\(H(\theta)\)</span>: <span class="math display">\[G \sim \operatorname{DP}(\alpha, H)\]</span> Where DP is the Dirichlet Process. Basically, we are generating a distribution of distribution(parameters for the distribution of data). There is a parameter <span class="math inline">\(\alpha&gt;0\)</span> called concentration parameter controlling how discrete <span class="math inline">\(G\)</span> is. Extremely, if <span class="math inline">\(\alpha = 0\)</span>, then <span class="math inline">\(G\)</span> is super discrete, <span class="math inline">\(G\)</span> will only have one value. if <span class="math inline">\(\alpha = +\infinity\)</span>, then <span class="math inline">\(G\)</span> is exactly equal to <span class="math inline">\(H\)</span>. How can we construct such a discrete distribution? We will see next time.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Reading Note </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Bayesian Nonparametrics </tag>
+            
+            <tag> Dirichlet process </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Reinforcement Learning Introduction</title>
       <link href="/2022/02/12/Reinforcement-Learning-Introduction/"/>
       <url>/2022/02/12/Reinforcement-Learning-Introduction/</url>
